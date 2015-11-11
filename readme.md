@@ -1,9 +1,9 @@
-## Description
+### Description
 
 Using Meteor V1.2.1 the following does not work in a package.js file:
 
     api.addFiles([
-        '../../private/bower_components/bootstrap/less/buttons.less',
+        '../../private/test.js',
     ],'client',{isImport: true});
 
 
@@ -83,14 +83,17 @@ Error output produced:
         at C:\tools\runners\run-app.js:396:12
 
 
-## References
+### References
 
 Problem brought up [here](https://github.com/meteor/meteor/issues/5252)
 
 Problem detailed [here](http://stackoverflow.com/questions/33626282/meteor-1-2-share-files-between-packages)
 
 
-## System details
+### System details
+
 Microsoft Windows: 6.3.9600
+
 Node: 4.2.2
+
 Meteor: 1.2.1
